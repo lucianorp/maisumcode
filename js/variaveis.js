@@ -32,12 +32,41 @@
 
 //variavel declarada com CONST
 
-const nome = "Luciano"
+// const nome = "Luciano"
 
-function meuNome(){
-    const nome = "João"
-    console.log(nome)
+// function meuNome(){
+//     const nome = "João"
+//     console.log(nome)
+// }
+
+// console.log(nome)
+// meuNome()
+
+
+//variáveis e tipos de dados
+
+const nome = "Luciano Rocha" //string
+
+const cpf = "9595555555"
+
+const numero = 30 //number
+
+const produtoEnviado = true //ou false - boolean
+
+const elemento = document.querySelector('section')
+
+const frutas = ["banana","maçã","pera"] //array
+
+//console.log(frutas[1])
+
+//objeto
+const pessoa = {
+    nome:"Luciano",
+    idade:39,
+    endereco:{
+        bairro:"canasvieiras",
+        cidade:"florianópolis"
+    }
 }
 
-console.log(nome)
-meuNome()
+console.log(pessoa.endereco.bairro)
