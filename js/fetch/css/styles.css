@@ -1,0 +1,14 @@
+.card{
+    width: 300px;
+    border: 1px solid #AAA;
+    padding: 5px;
+  }
+  
+  img{
+    max-width:100%
+  }
+  
+  h2,p{
+    font-family: Arial;
+    text-align: center
+  }
