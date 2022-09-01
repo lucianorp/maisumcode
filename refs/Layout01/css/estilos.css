@@ -1,0 +1,411 @@
+/*fontes*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p{
+    color: #5e5e5e;
+    line-height: 2;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo{
+    display: flex;
+    justify-content: space-between;
+    width: 960px;
+}
+
+.flex-column{
+    flex-direction: column;
+    align-items: center;
+}
+
+section{
+    padding: 90px 0;
+}
+
+section:not(#portfolio,#contatos) a{
+    color: #FFF;
+    background:#222222;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 20px 35px;
+    font-weight: 600;
+    box-shadow: 2px 2px 5px #222222;
+    margin-top: 50px;
+}
+
+section a span{
+    color: #f25858;
+}
+
+/*header*/
+
+header{
+    background: #222222;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 0 5px #222222;
+    z-index: 10;
+}
+
+header .logo a{
+    text-decoration: none;
+}
+
+header h1{
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #FFF;
+    
+}
+
+/*nav header*/
+
+nav{
+    width: 50%;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    height: 41px;
+}
+
+nav a{
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all ease-in .3s;
+}
+
+nav a:hover{
+    color: #f25858;
+}
+
+/*section banner*/
+
+#banner{
+    background-image: url(../imagens/fundo-home.jpg),url(../imagens/fundo-quem-somos.jpg);
+    /* background-blend-mode: multiply; */
+    background-size: cover;
+    background-attachment: fixed;
+    height: 614px;
+}
+
+#banner .conteudo{
+    height: 614px;
+    justify-content: center;
+}
+
+#banner p{
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px #222222;
+}
+
+/*quem somos*/
+
+#quem-somos h2,#portfolio h3,#videos h4{
+    font-size: 30px;
+    color: #5e5e5e;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#quem-somos p{
+    text-align: center;
+    margin-top: 65px;
+}
+
+/*porfolio*/
+
+#portfolio{
+    background: #222222;
+}
+
+#portfolio h3{
+    color: #d9d9d9;
+}
+
+.imagens-portfolio{
+    margin: 68px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.imagens-portfolio img{
+    background: #FFF;
+    padding: 3px;
+    margin: 5px 0;
+    opacity: 0.5;
+}
+
+.imagens-portfolio a:hover img{
+    opacity: 1;
+}
+
+.conheca-portfolio{
+    background: #d55050;
+    color: #FFF;
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 20px 0;
+    transition: all ease-in 0.3s;
+}
+
+.conheca-portfolio:hover{
+    background: #FFF;
+    color: #d55050;
+}
+
+/*videos*/
+
+#videos h4{
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.texto-videos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.texto-videos h5{
+    width: 100%;
+    color: #d55050;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/*mapa*/
+#mapa{
+    padding-bottom: 0;
+}
+
+/*footer*/
+
+footer{
+    background: #d55050;
+    padding: 35px 0;
+}
+
+footer p{
+    color: #FFF;
+}
+
+.redes-sociais a{
+    color: #000;
+    font-size: 30px;
+}
+
+.redes-sociais a:hover{
+    color: #d9d9d9;
+    text-shadow: 0 0 7px rgb(71, 71, 71);
+}
+
+/*Arquivo Contato*/
+
+body.contato #banner{
+    background-image:url(../imagens/fundo-contato.jpg);
+}
+
+body.contato #banner .conteudo{
+    align-items: center;
+}
+
+body.contato #banner h1{
+    font-size: 36px;
+    color: #FFF;
+    background: #f25858;
+    box-shadow: 0 0 5px #222222;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+body.contato h2{
+    font-size: 36px;
+}
+
+body.contato h2 span{
+    color: #f25858;
+}
+
+body.contato #contatos p{
+    font-style: italic;
+    margin-bottom: 50px;
+}
+
+body.contato .formulario{
+    width: 470px;
+}
+
+body.contato form input,body.contato form textarea{
+    width: 70%;
+    resize: none;
+    background: #dfdbdb;
+    border: 1px solid #dfdbdb;
+    margin: 14px 0;
+    font-size: 24px;
+    padding: 5px;
+    color: #222222;
+    border-radius: 5px;
+}
+
+body.contato form input[type=submit]{
+    background: #f25858;
+    color: #FFF;
+    width: 73%;
+    border: 1px solid #f25858;
+    cursor: pointer;
+}
+
+body.contato form input[type=submit]:hover{
+    background: #222222;
+}
+
+body.contato .redes-pessoal{
+    width: 450px;
+}
+
+body.contato .redes-pessoal a{
+    text-decoration: none;
+    font-size: 24px;
+    margin-left: 5px;
+}
+
+body.contato .redes-pessoal a:hover{
+    color: #d55050;
+    text-shadow: none;
+}
+
+body.contato .pessoalmente{
+    margin-top: 90px;
+}
+
+body.contato .pessoalmente a{
+    color: #222222;
+    display: block;
+    font-size: 20px;
+    line-height: 2;
+}
+
+body.contato #mapa{
+    padding-top: 0;
+}
+
+body.contato #mapa h2{
+    text-align: center;
+}
+
+
+/*smartphone*/
+
+@media (max-width:960px){
+    header{
+        background: rgb(48, 165, 12);
+    }
+
+}
+
+
+@media (max-width:768px){
+    header{
+        background: coral;
+    }
+
+}
+
+
+@media (max-width:480px){
+
+    header{
+        background: rgb(22, 53, 110)
+    }
+
+   .conteudo{
+       flex-direction: column;
+       align-items: center;
+   }
+
+   nav{
+       width: 100%;
+   }
+
+   nav ul{
+       flex-direction: column;
+       height: 100px;
+       margin-top: 10px;
+   }
+   nav ul li{
+       width: 100%;
+       text-align: center;
+   }
+   nav a{
+       background: #d55050;
+       display: block;
+   }
+
+   #banner{
+       height: 500px;
+   }
+
+   #banner p{
+       text-align: center;
+   }
+
+   .imagens-portfolio{
+       flex-direction: column;
+   }
+
+   .texto-videos{
+       width: 80%;
+       align-items: center;
+       margin-bottom: 50px;
+   }
+
+   .texto-videos h5{
+       text-align: center;
+   }
+
+   .texto-videos p{
+       text-align: center;
+   }
+
+   .video-youtube{
+       width: 80%;
+   }
+
+   .video-youtube iframe{
+       width: 100%;
+       height: 150%;
+   }
+   
+}
+
+

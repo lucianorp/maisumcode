@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--icones-->
+    <link href="../icons/css/all.min.css" rel="stylesheet">
+    <!--css principal-->
+    <link href="../css/styles.css" rel="stylesheet">
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!--lightbox-->
+    <link href="css/lightbox.css" rel="stylesheet">
+
+
+
+    <title>Marca | Contato</title>
+</head>
+
+<body class="page-contato">
+    <header>
+        <div class="container">
+            <div class="content">
+                <div class="brand">
+                    <h1>Marca</h1>
+                </div>
+                <!--brand-->
+
+
+
+                <nav>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="quem-somos.html">Quem Somos</a></li>
+                        <li><a href="portfolio.html">Portfólio</a></li>
+                        <li><a href="videos.html">Vídeos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!--content-->
+        </div>
+        <!--container-->
+    </header>
+
+    <section id="banner-contato">
+        <div class="container-title">
+            <h1>Contato</h1>
+        </div>
+        <!--container-title-->
+    </section>
+
+    <section class="contatos">
+        <div class="container">
+            <div class="content">
+                <div class="formulario">
+                    <h2>...pelo <span>formulário</span></h2>
+                    <p><i>um comentário, uma dica, uma idéia :)</i></p>
+                    <form method="post" action="contato.php">
+                        <label>Nome:</label>
+                        <input type="text" name="nome" placeholder="Digite seu nome:" autocomplete="off" required>
+                        <label>Email:</label>
+                        <input type="email" name="email" placeholder="Digite seu email:" autocomplete="off" required>
+                        <label>Mensagem:</label>
+                        <textarea name="mensagem" placeholder="Mensagem:" required rows="5"></textarea>
+
+                        <button type="submit">Enviar dados</button>
+
+                    </form>
+                </div>
+                <!--formulario-->
+                <div class="contato-redes">
+                    <h2>...pelas <span>redes</span></h2>
+                    <p><i>curta, compartilhe, assine e indique :)</i></p>
+
+                    <div class="redes-sociais">
+                        <a href="#"><i class="fa-brands fa-instagram-square"></i> /marca</a>
+                        <a href="#"><i class="fa-brands fa-facebook-square"></i> /marca</a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i> /marca</a>
+                    </div>
+
+                    <h2>ou <span>pessoalmente</span></h2>
+                    <p><i>nos ligue, mande um whats ou venha tomar um café :)</i></p>
+
+                    <div class="contato-pessoal">
+                        <a href="tel:+5548998562512"><i class="fa-solid fa-phone-flip"></i> (48)99999-9999</a>
+
+                        <a href="https://api.whatsapp.com/send?phone=00999999999&text=Bem%20vindo%20cliente." target="blank"><i class="fa-brands fa-whatsapp"></i> (48) 99999-9999</a>
+
+                        <a href="https://goo.gl/maps/VJkeDTf1coc3BopS9" target="blank"><i class="fa-solid fa-location-dot"></i> Rua X, Bairro Y, Florianópolis-SC</a>
+                    </div>
+
+                </div>
+                <!--contato-redes-->
+            </div>
+            <!--content-->
+        </div>
+        <!--container-->
+    </section><!--contatos-->
+
+    <section class="map">
+        <h2>Nossa <span>Localização</span></h2>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28328.782243465994!2d-48.47936511335069!3d-27.435063255932658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x952743922deec995%3A0xbf7d50da7bcb1ba1!2sCanasvieiras%2C%20Florian%C3%B3polis%20-%20SC!5e0!3m2!1spt-BR!2sbr!4v1651618085680!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+
+
+    <footer>
+        <div class="container">
+            <div class="content">
+                <div class="copyright">
+                    <p>2022. Marca-todos os direitos reservados</p>
+                </div>
+                <!--copyright-->
+                <div class="social-media">
+                    <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                </div>
+                <!--social-media-->
+            </div>
+            <!--content-->
+        </div>
+        <!--container-->
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $("form button").on("click", function (event) {
+            event.preventDefault()
+            var nome = $("input[name=nome]").val()
+            alert("seu nome é " + nome)
+        })
+    </script>
+
+
+
+</body>
+
+</html>

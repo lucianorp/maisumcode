@@ -1,0 +1,179 @@
+/* p{
+    background: #F00 !important;
+    color: #FFF;
+} */
+
+/*id*/
+/* #paragrafo-1{
+    background: #0F0;
+    color: #000;
+} */
+
+/*class*/
+/* .destaque{
+    background: #00F;
+    color: #FFF;
+} */
+
+/*@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap');*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    color: #333;
+}
+
+.container{
+    width: 1000px;
+    margin: 0 auto;
+    /*height: 100px;*/
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*header*/
+header{
+    background: #333;
+    color: #EEE;
+    /* margin-top: 10px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    margin-right: 15px; */
+    /*margin: 0 15px 5px 20px;*/ /*cima, direita, embaixo e esquerda*/
+    padding: 20px 10px;
+}
+
+header a{
+    color: #EEE;
+}
+
+/*nav*/
+
+nav{
+    background: #CCC;
+    
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    /* flex-direction: column;
+    align-items: center; */
+}
+
+nav ul li:hover{
+    /* transform: rotate(160deg); */
+}
+
+nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    background: #FFF;
+    padding: 5px 20px;
+    transition: all 0.3s ease-in;
+    /* transform: scale(2); */
+    display: inline-block;
+}
+
+nav ul li a:hover{
+    background: #333;
+    color: #FFF;
+    transform: scale(1.2);
+}
+
+/*main*/
+
+main{
+    background: #d5d5d5;
+}
+
+main .content{
+    background: #AAA;
+    align-items: flex-start;
+}
+
+section{
+    width: 700px;
+}
+
+section article{
+    padding: 20px;
+}
+
+section article .content{
+    flex-direction: column;
+}
+
+section article header{
+    background: rgb(193, 193, 193);
+}
+
+section article p{
+    color: rgb(49, 49, 49);
+    margin-bottom: 20px;
+}
+
+p.paragrafo-destaque{
+    color: aqua;
+    background: #000;
+}
+
+section footer{
+    background-color: #000;
+    color: #FFF;
+    text-align: left;
+}
+
+section footer a{
+    color: #F00;
+    padding: 10px;
+    display: block;
+    text-align: right;
+}
+
+aside{
+    width: 100px;
+    padding-top: 20px;
+}
+
+aside ul{
+    list-style: none;
+}
+
+aside a{
+    display: block;
+    background: #CCC;
+    margin-bottom: 3px;
+    text-align: center;
+}
+
+aside a:hover{
+    background: #FFF;
+}
+
+footer{
+    background: #DDD;
+    color: #333;
+    text-align: center;
+}

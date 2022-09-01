@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marca</title>
+
+    <!--icones-->
+    <link href="css/all.min.css" rel="stylesheet">
+
+    <!--google fonts-->
+
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;800&display=swap" rel="stylesheet"> -->
+    
+    <!--estilos principais-->
+    <link href="css/estilos.css" rel="stylesheet">
+
+    <!--lightbox-->
+    <link href="css/lightbox.css" rel="stylesheet" />
+
+    <!--favicon-->
+
+    <link href="imagens/icon-favicon.ico" rel="shortcut icon">
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="conteudo">
+                <div class="logo">
+                    <a href="index.html"><h1>Marca</h1>
+                </div><!--logo-->
+                <nav>
+                    <ul>
+                        <li><a href="quem-somos.html">Quem Somos</a></li>
+                        <li><a href="portfolio.html">Portfólio</a></li>
+                        <li><a href="videos.html">Vídeos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div><!--conteudo-->
+        </div><!--container-->
+    </header>
+
+    <main>
+        <section id="banner">
+            <div class="container">
+                <div class="conteudo flex-column">
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+                    <a href="#">Saiba <span>+</span></a>
+                </div><!--conteudo-->
+            </div><!--container-->
+        </section><!--banner-->
+
+        <section id="quem-somos">
+            <div class="container">
+                <div class="conteudo flex-column">
+                    <h2>Quem Somos</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
+                    <a href="#">Saiba <span>+</span></a>
+                </div><!--conteudo-->
+            </div><!--container-->
+        </section><!--quem-somos-->
+
+        <section id="portfolio">
+            <div class="container">
+                <div class="conteudo flex-column">
+                    <h3>Portfólio</h3>
+                    <div class="imagens-portfolio">
+                        <a href="imagens/fundo-home.jpg" data-lightbox="portfolio" data-title="Caminho"><img src="imagens/caminho.jpg" alt="caminho"></a>
+                        <a href="imagens/ilha.jpg" data-lightbox="portfolio" data-title="Ilha"><img src="imagens/ilha.jpg" alt="caminho"></a>
+                        <a href="imagens/fundo-home.jpg" data-lightbox="portfolio" data-title="Caminho"><img src="imagens/caminho.jpg" alt="caminho"></a>
+                        <a href="imagens/ilha.jpg" data-lightbox="portfolio" data-title="Ilha"><img src="imagens/ilha.jpg" alt="caminho"></a>
+                        <a href="imagens/fundo-home.jpg" data-lightbox="portfolio" data-title="Caminho"><img src="imagens/caminho.jpg" alt="caminho"></a>
+                        <a href="imagens/ilha.jpg" data-lightbox="portfolio" data-title="Ilha"><img src="imagens/ilha.jpg" alt="caminho"></a>
+                       
+                    </div><!--imagens-portfolio-->
+                    <a href="#" class="conheca-portfolio">Conheça todos os nossos trabalhos</a>
+                </div><!--conteudo-->
+            </div><!--container-->
+        </section><!--portfolio-->
+
+        <section id="videos">
+            <h4>Vídeos</h4>
+            <div class="container">
+                <div class="conteudo">
+                    <div class="texto-videos">
+                        <h5>Lorem Ipsum</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis dolorem, voluptatem autem ut ea doloremque officiis magni, accusamus est quae ex nisi dolore modi vel culpa! Quos accusantium quis quia?</p>
+                        <a href="#">Saiba <span>+</span></a>
+                    </div><!--texto-videos-->
+                    <div class="video-youtube">
+                        <iframe src="https://www.youtube.com/embed/ttFcOOdkj8o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div><!--video-youtube-->
+                </div><!--conteudo-->
+            </div><!--container-->
+        </section><!--videos-->
+
+        <section id="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31782585.12458623!2d-69.86760819854179!3d-13.491952921431437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95273823a0d6311b%3A0xc4b51996027612ee!2sEra%20Conectada!5e0!3m2!1spt-BR!2sbr!4v1613428394471!5m2!1spt-BR!2sbr" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </section>
+
+
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="conteudo">
+                <p>2022. Mais um code. Todos os direitos reservados</p>
+                <div class="redes-sociais">
+                    <a href="https://facebook.com"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="js/lightbox.js"></script>
+
+    <script>
+        lightbox.option({
+          'showImageNumberLabel':false
+        })
+    </script>
+
+</body>
+</html>

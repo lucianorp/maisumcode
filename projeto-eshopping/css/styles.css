@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--inter)
+}
+
+:root{
+    --poppins:'Poppins', sans-serif;
+    --inter:'Inter', sans-serif;
+    --dmsans:'DM Sans', sans-serif;
+}
+
+.justify-content-evenly{
+    justify-content: space-evenly;
+}
+
+/*
+font-family: 'DM Sans', sans-serif;
+font-family: 'Inter', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+nav.contacts{
+    background: #0E0E0E;
+    padding: 15px 0;
+}
+
+nav.contacts .col-md-6 img{
+    margin-right: 5px;
+}
+
+nav.contacts .col-md-2 img{
+    margin: 0 9px;
+}
+
+nav.contacts span{
+    color: #FFF;
+}
+
+#conteudoNavbarSuportado .navbar-nav{
+    width: 600px;
+}
+
+#conteudoNavbarSuportado .form-inline .navbar-nav{
+    width: 340px;
+}
+
+/*banner*/
+
+#banner{
+    background: url(../images/banner.jpeg) no-repeat right;
+    height: 445px;
+    box-shadow: 0 2px 5px #AAA;
+}
+
+/*feature*/
+
+#features{
+    margin: 60px 0;
+}
+
+.feature .description{
+    text-align: center;
+}
+
+.feature h3{
+    font-family: var(--poppins);
+    font-size: 18px;
+    font-weight: ;
+}
+
+.feature p{
+    font-family: var(--poppins);
+    font-size: 14px;
+}
+
+/*categories*/
+
+.name-category{
+    position: absolute;
+    top: 10px;
+    left: 28px;
+    z-index: 10;
+}
+
+.name-category h4{
+    font-family: var(--poppins);
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.name-category a{
+    font-family: var(--poppins);
+    border-bottom: 2px solid #0E0E0E;
+    color: #0E0E0E;
+    transition: all ease-in 0.3s;
+}
+
+.name-category a:hover{
+    text-decoration: none;
+    border-bottom: 2px solid #13c6d0;
+    color: #13c6d0;
+}
+
+/*top sales*/
+
+#top-sales{
+    text-align: center;
+    margin: 56px 0;
+    font-family: var(--poppins);
+    font-size: 18px;
+}
+
+#top-sales .top-sales-title{
+    font-size: 24px;
+}
+
+#top-sales .top-sales-subtitle{
+    font-size: 36px;
+    font-weight: 500;
+}
+
+/*shelf*/
+
+.product{
+    font-family: var(--poppins);
+}
+
+.product .flag{
+    position: absolute;
+    top: 15px;
+}
+
+.product .wishlist{
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product .wishlist img{
+    margin: 3px 0;
+}
+
+.product .product-details .product-name{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 15px 0 5px;
+    line-height: 1.5;
+}
+
+.product .rates, .product .price{
+    display: flex;
+    align-items: flex-start;
+}
+
+.product .rates img{
+    margin:5px 15px 0 0;
+}
+
+.product .rates p{
+    color: #D0D0D0;
+    margin-bottom: 0.5rem;
+}
+
+.product .price .preco-de{
+    margin-right: 15px;
+    color: #969696;
+    text-decoration: line-through;
+}
+
+/*banner voucher*/
+
+#banner-voucher{
+    margin: 56px 0;
+    color: #FFF;
+    
+}
+
+#banner-voucher .container{
+    background: url(../images/banner-voucher.jpeg) no-repeat;
+}
+
+#banner-voucher .container .row{
+    height: 288px;
+}
+
+#banner-voucher h3{
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/*deal of the day*/
+
+#deal-of-the-day{
+    margin: 56px 0;
+}
+
+#deal-of-the-day h4{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 56px;
+}  
+
+#deal-of-the-day .rates, #deal-of-the-day .price, #deal-of-the-day .buttons{
+    gap: 10px;
+}
+
+#deal-of-the-day .buttons .btn + .btn{
+    margin-left: 10px;
+}

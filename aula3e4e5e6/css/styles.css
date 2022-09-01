@@ -1,0 +1,9 @@
+body{
+    background: #CCC;
+    background: rgb(255,153,153);
+    background: rgba(134, 119, 119, 0.5);
+}
+h2{
+    /*color: aqua !important;*/
+    color: aqua; /*cor da fonte*/
+}

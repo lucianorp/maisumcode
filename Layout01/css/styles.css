@@ -1,0 +1,472 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+:root{
+    --gray:#222;
+    --red:#f25858;
+
+    --largura:1140px;
+}
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    width: var(--largura);
+    margin: 0 auto;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content.column{
+    flex-direction: column;
+}
+
+.more{
+    font-size: 30px;
+    color: #FFF;
+    padding: 20px 30px;
+    background: #222;
+    text-decoration: none;
+    margin-top: 50px;
+    text-transform: uppercase;
+    box-shadow: 3px 3px 5px #000;
+    font-weight: 600;
+}
+
+.more span{
+    color: var(--red);
+}
+
+/*header*/
+header{
+    background: var(--gray);
+    padding: 10px 0;
+    box-shadow: 0 5px 10px #000;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+header h1{
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    width: 600px;
+    justify-content: space-between;
+    align-items: center;
+    height: 43px;
+}
+
+nav a{
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease-in;
+}
+
+nav a:hover{
+    color: var(--red);
+}
+
+/*banner*/
+
+#banner,#banner-quemsomos,#banner-contato{
+    background: url(../images/fundo-home.jpg) no-repeat bottom;
+    height: 614px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#banner .content{
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner p{
+    color: #FFF;
+    font-weight: 600;
+    font-size: 22px;
+    text-shadow: 0px 0px 3px #222;
+}
+
+/*quem somos*/
+
+#quem-somos{
+    padding: 80px 0;
+    text-align: center;
+}
+
+#quem-somos .content{
+    align-items: center;
+}
+
+#quem-somos h2{
+    font-size: 30px;
+    color: var(--gray);
+    margin-bottom: 60px;
+    text-transform: uppercase;
+}
+
+#quem-somos p{
+    font-size: 20px;
+    color: #5e5e5e;
+    line-height: 2;
+    width: 80%;
+    font-weight: 300;
+}
+
+/*portfolio*/
+
+#portfolio{
+    background: var(--gray);
+    padding: 80px 0;
+}
+
+#portfolio h3, #videos h4{
+    color: #FFF;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+#portfolio .content{
+    flex-wrap: wrap;
+}
+
+#portfolio img{
+    padding: 5px;
+    background: #FFF;
+    margin-bottom: 10px;
+    opacity: 0.7;
+}
+
+#portfolio a:hover img{
+    opacity: 1;
+}
+
+#portfolio .all-works{
+    display: block;
+    background: var(--red);
+    text-align: center;
+    color: #d8d8d8;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 40px;
+    padding: 35px 0;
+    box-shadow: 0 5px 5px #000;
+}
+
+#portfolio .all-works:hover{
+    color: var(--red);
+    background: #FFF;
+}
+
+/*videos*/
+
+#videos{
+    padding: 80px 0;
+}
+
+#videos .description{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 45%;
+}
+
+#videos h4{
+    color: #AAA;
+}
+
+#videos h5{
+    color: var(--red);
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: normal;
+    width: 100%;
+}
+
+#videos p{
+    color: #AAA;
+    font-size: 18px;
+    margin: 20px 0;
+    line-height: 2;
+}
+
+#videos .more{
+    margin-top: 0;
+}
+
+/*footer*/
+
+footer{
+    background: var(--red);
+    padding: 30px 0;
+}
+
+footer p{
+    color: #FFF;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+footer .social-media a{
+    font-size: 30px;
+    color: #000;
+}
+
+
+/* css dos arquivos quemsomos*/
+
+#banner-quemsomos{
+
+	background: url("../images/fundo-quem-somos.jpg") no-repeat top;
+
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#banner-quemsomos h1{
+	background: #F00;
+	width: 100%;
+	color: #FFF;
+	padding: 10px;
+	box-shadow: 2px 2px 3px #333;
+
+}
+
+#somos-marca{
+	display: flex;
+	justify-content: center;
+}
+
+
+#somos-marca .container{
+
+	display: flex;
+	justify-content: space-between;
+	width: 960px;
+	padding: 80px;
+
+}
+
+#texto-somos-marca{
+	width: 400px;
+}
+
+#texto-somos-marca h2{
+	color: #F00;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+#texto-somos-marca h2 span{
+	color: #000;
+}
+
+#texto-somos-marca p{
+	line-height: 1.5;
+	border-left: 1px solid #AAA;
+
+	padding-left: 20px;
+	margin-top: 20px
+}
+
+#destaques{
+	background: #f25858;
+	display: flex;
+	justify-content: center;
+	padding: 30px 0
+
+}
+
+#destaques .container{
+	display: flex;
+	width: 960px;
+	justify-content: space-between;
+
+}
+
+.destaque{
+	width: 250px;
+
+}
+
+
+.alinhar-destaque{
+	color: #FFF;
+	text-align: center;
+}
+
+.destaque h3{
+	font-size: 30px;
+	margin: 10px 0;
+}
+
+/*equipe*/
+
+#equipe{
+	padding: 30px 0
+}
+
+
+#equipe h4{
+	text-align: center;
+	font-size: 30px;
+
+}
+
+#equipe h4 span{
+	color: #f25858;
+}
+
+
+.container-equipe{
+	display: flex;
+	justify-content: center;
+	margin-top: 30px
+}
+
+
+#equipe .container{
+	display: flex;
+	justify-content: space-between;
+	width: 960px;
+}
+
+.membro{
+	width: 22%
+}
+
+.membro img{
+	max-width: 100%
+}
+
+.membro h5{
+	color: #f25858;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 25px;
+	margin: 10px 0
+
+}
+
+.membro p{
+	line-height: 1.5
+}
+
+
+/*contato*/
+
+#banner-contato{
+    background: url(../images/fundo-contato.jpg);
+}
+
+#banner-contato .container-title{
+    height: 614px;
+    display: flex;
+    align-items: center;
+}
+
+#banner-contato h1{
+    background: var(--red);
+    font-size: 40px;
+    color: #FFF;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    box-shadow: 0 5px 5px #222;
+    /* opacity: 0.5; */
+    
+}  
+
+.contatos .formulario{
+    border-right: 1px solid #222;
+    padding-right: 150px;
+}
+
+.contatos h2{
+    font-size: 30px;
+}
+
+.contatos h2 span{
+    color: var(--red);
+}
+
+.contatos form label{
+    display: block;
+}
+
+.contatos form{
+    margin-top: 10px;
+}
+
+.contatos form input,textarea{
+    width: 100%;
+    resize:none;
+    font-size: 18px;
+    padding: 5px;
+    margin-bottom: 10px;
+    background: #d8d8d8;
+    border: none;
+}
+
+.contatos form button{
+    width: 100%;
+    background: var(--red);
+    border: 1px solid var(--red);
+    cursor: pointer;
+    color: #FFF;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 10px 0;
+}
+
+.contatos form button:hover{
+    background: #000;
+}
+
+
+/*responsivo*/
+@media (max-width:760px){
+    header{
+        background: var(--red);
+    }
+    header h1{
+        color: #333;
+        font-size: 24px;
+    }
+}
+
+@media (max-width:480px){
+    header{
+        background: #AAA;
+    }
+    .content{
+        flex-direction: column;
+    }
+}
+
